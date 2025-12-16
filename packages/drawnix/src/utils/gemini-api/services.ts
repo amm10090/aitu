@@ -42,7 +42,7 @@ export async function generateImageWithGemini(
     size: options.size || '1024x1024',
   };
 
-  const url = `${validatedConfig.baseUrl}/images/generations`;
+  const url = validatedConfig.baseUrl;
 
   const response = await fetch(url, {
     method: 'POST',
